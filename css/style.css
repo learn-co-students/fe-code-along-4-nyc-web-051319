@@ -81,6 +81,14 @@ it'll always be 100% in parent confines */
 
 /*/////LAYOUT////*/
 
+* /* it'll include both padding & border into the width */
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 .wrapper {
   wdith: 960px;
   margin: 0 auto; /*first value = top & bottom, 2nd value = left & right */
