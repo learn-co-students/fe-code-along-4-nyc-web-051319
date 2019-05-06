@@ -42,7 +42,6 @@ figcaption {
 /* ID selector (apply to one unique element per page) */
 
 #logo { /* select elements with id="logo" */
-  background: aqua;
 }
 
 /* Descendent Selector */
@@ -93,7 +92,7 @@ it'll always be 100% in parent confines */
   wdith: 960px;
   margin: 0 auto; /*first value = top & bottom, 2nd value = left & right */
   /* auto margin is allowing it to center when shrinking or changing broswer window */
-  background: #eee;
+  
 }
 
 /* CLASSES TO CREATE DIFF SIZE COLUMNS */
@@ -148,6 +147,15 @@ value of col- = we give it a val of margin on left-hand side */
 /*anything with .first set its left margin to 0% */
 
 /* /////////SECTIONS ////*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
 
 section {
   padding: 20px;
