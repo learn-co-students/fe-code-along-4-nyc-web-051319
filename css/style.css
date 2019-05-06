@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
-/* This 
-is 
+/* This
+is
 a comment! */
 
 /* CSS Syntax:
@@ -70,3 +70,63 @@ figcaption {
 #details a:active {
   color: red;
 }
+
+/*/////LAYOUT////*/
+
+.wrapper {
+  wdith: 960px;
+  margin: 0 auto; /*first value = top & bottom, 2nd value = left & right */
+  /* auto margin is allowing it to center when shrinking or changing broswer window */
+  background: #eee;
+}
+
+/* CLASSES TO CREATE DIFF SIZE COLUMNS */
+
+
+.col-1  /*spans 1/3 of space */
+{
+  float: left; /*to set col struct side by side.*/
+  width: 32%;
+  background: #ccc;
+}
+
+.col-2 /*spans 2/3 of space */
+{
+  float: left;
+  width: 66%;
+  background: #ccc;
+}
+
+.col-3 /* spans rest of space */
+{
+  background: #ccc;
+}
+
+/*adding class of clearfix bc of floating children which
+will make parent collaps */
+
+/* Now apply cleafix class to any of the parents that are collapsing */
+.clearfix: after {
+  content: "." ;
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+
+
+
+/*trick to grab all columns without naming each =
+[attr selector] says anything *= that has a class which has
+value of col- = we give it a val of margin on left-hand side */
+[class*="col-"]  {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0%;
+}
+
+/*anything with .first set its left margin to 0% */
