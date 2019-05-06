@@ -72,8 +72,12 @@ figcaption {
 }
 
 /*/////MEDIA////*/
+img, video, audio {
+  max-width: 100%;
+}
 
-
+/*allows audio video & img to  be fluid in sizing so
+it'll always be 100% in parent confines */
 
 /*/////LAYOUT////*/
 
@@ -134,3 +138,10 @@ value of col- = we give it a val of margin on left-hand side */
 }
 
 /*anything with .first set its left margin to 0% */
+
+/* /////////SECTIONS ////*/
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
