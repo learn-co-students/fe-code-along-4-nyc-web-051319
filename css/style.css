@@ -71,6 +71,10 @@ figcaption {
   color: red;
 }
 
+/*/////MEDIA////*/
+
+
+
 /*/////LAYOUT////*/
 
 .wrapper {
@@ -105,7 +109,7 @@ figcaption {
 /*adding class of clearfix bc of floating children which
 will make parent collaps */
 
-/* Now apply cleafix class to any of the parents that are collapsing */
+/* Now apply cleafix class to any of the parents that are floating */
 .clearfix: after {
   content: "." ;
   display: block;
